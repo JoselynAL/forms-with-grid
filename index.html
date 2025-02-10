@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <p>Nav</p>
+        </nav>
+    </header>
+
+    <form id="contact-form" action="/submit-path" method="post">
+        <h2>Contact Us</h2>
+        <div id="name-field">
+            <label for="name-input">Name:</label>
+            <input type="text" id="name-input" name="name" required>
+        </div>
+
+        <div id="email-field">
+            <label for="email-input">Email:</label>
+            <input type="email" id="email-input" name="email" required>
+        </div>
+
+        <div id="phone-field">
+            <label for="phone-input">Phone:</label>
+            <input type="tel" id="phone-input" name="phone">
+        </div>
+
+        <div id="dropdown-field">
+            <label for="reason-select">Reason:</label>
+            <select id="reason-select" name="reason">
+                <option value="">--Please choose an option--</option>
+                <option value="inquiry">I have a question</option>
+                <option value="problem">I have a problem</option>
+                <option value="job">I want a job</option>
+                <!-- Add more options here -->
+            </select>
+        </div>
+
+        <div id="message-field">
+            <label for="message-area">Message:</label>
+            <textarea id="message-area" name="message"></textarea>
+        </div>
+
+        <div id="checkbox1-field">
+            <label for="checkbox1-input">Checkbox 1:</label>
+            <input type="checkbox" id="checkbox1-input" name="checkbox1">
+        </div>
+
+        <div id="checkbox2-field">
+            <label for="checkbox2-input">Checkbox 2:</label>
+            <input type="checkbox" id="checkbox2-input" name="checkbox2">
+        </div>
+
+        <div id="radio1-field">
+            <label for="radio1-input">Radio 1:</label>
+            <input type="radio" id="radio1-input" name="radio">
+        </div>
+
+        <div id="radio2-field">
+            <label for="radio2-input">Radio 2:</label>
+            <input type="radio" id="radio2-input" name="radio">
+        </div>
+
+        <div id="file-field">
+            <label for="file-input">File:</label>
+            <input type="file" id="file-input" name="file">
+        </div>
+
+        <!-- Submit Button using input element -->
+        <input type="submit" value="Submit">
+
+        <!-- Submit Button using button element -->
+        <button type="submit">Submit</button>
+
+        <!-- Submit Buttons with added values, useful for identifying which button was clicked in a form with multiple submit buttons -->
+        <button type="submit" name="action" value="save">Submit & Save</button>
+        <button type="submit" name="action" value="publish">Submit & Publish</button>
+    </form>
+
+    <!-- Submit Button outside Form -->
+    <button type="submit" form="contact-form">Submit Outside</button>
+
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>

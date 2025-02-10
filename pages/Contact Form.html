@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <form id="contact-form-2" action="#" method="post" class="contact-form-grid-2">
+    <!-- Columna 1: Imagen (va fuera del grid de contenidos, pero la incluimos en el grid para simplificar) -->
+    <div class="image-cell">
+      <img src="../smartphone.jpg" alt="Smartphone Image">
+    </div>
+
+    <!-- Row 1: Title -->
+    <div class="title-cell">
+      <h1>Contact Us</h1>
+    </div>
+
+    <!-- Row 2: Full Name y Contact (hi@green.com) -->
+    <div class="fullname-cell">
+            <input type="text" id="name-input-2" name="name" placeholder="Full Name" required>
+    </div>
+    <div class="contact-info-cell">
+      <p class="contact-title">Contact</p>
+      <p class="contact-email">hi@green.com</p>
+    </div>
+    <!-- Row 3: Email y Location -->
+    <div class="email-cell">
+      <input type="email" id="email-input-2" name="email" placeholder="E-mail" required>
+    </div>
+    <div class="location-cell">
+      <p class="location-title">Based in</p>
+      <p class="location-1">New York,</p>
+      <p class="location-2">California, Ohio</p>
+    </div>
+
+    <!-- Row 4: Message -->
+    <div class="message-cell">
+      <textarea id="message-input" name="message" placeholder="Message" required></textarea>
+    </div>
+
+    <!-- Row 5: Submit Button y Social Icons -->
+    <div class="submit2-cell">
+      <button type="submit">Contact Us</button>
+    </div>
+    <div class="social-cell" style="grid-column: 3; grid-row: 5;">
+      <!-- Icons -->
+      <img src="../fb.png" alt="Facebook" width="24">
+      <img src="../ins.png" alt="Instagram" width="24">
+      <img src="../tw.jpeg" alt="Twitter" width="24">
+    </div>
+  </form>
+</body>
+</html>

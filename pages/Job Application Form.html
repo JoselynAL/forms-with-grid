@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+    <form id="job-application-form" action="#" method="post" class="job-application-grid">
+        <div class="title-cell-job">
+            <h1>Job Application (Web)</h1>
+        </div>
+
+        <div class="form-field first-name-field">
+            <label for="job-name">First Name</label>
+            <input type="text" id="first-name-input" name="first-name" placeholder="Enter First Name" required>
+        </div>
+        <div class="form-field last-name-field">
+            <label for="job-name">Last Name</label>
+            <input type="text" id="last-name-input" name="last-name" placeholder="Enter Last Name" required>
+        </div>
+        <div class="form-field job-email-field">
+            <label for="job-email">Email:</label>
+            <input type="email" id="job-email-input" name="job-email" placeholder="Enter Email" required>
+        </div>
+        <div class="form-field job-position-field">
+            <label for="job-position">Job Role</label>
+            <select id="job-position-input" name="job-position" required>
+                <option value="">Frontend Developer</option>
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-field job-address-field">
+            <label for="job-address">Enter Address</label>
+            <input type="text" id="job-address-input" name="job-address" required>
+        </div>
+        <div class="form-field job-city-field">
+            <label for="job-city">City</label>
+            <input type="text" id="job-city-input" name="job-city" placeholder="Enter City" required>
+        </div>
+        <div class="form-field job-zip-field">
+            <label for="job-zip">Zip:</label>
+            <input type="text" id="job-zip-input" name="job-zip" placeholder="Enter Zip Code" required>
+        </div>
+        <div class="form-field job-date-field">
+            <label for="job-date">Start Date</label>
+            <input type="text" id="job-date-input" name="job-date" placeholder="30/12/2021" pattern="\d{2}/\d{2}/\d{4}" required>
+        </div>
+        <div class="form-field job-resume-field">
+            <label for="job-resume">Upload Your CV</label>
+            <input type="file" id="job-resume-input" name="job-resume" placeholder="Choose File" required>
+        </div>
+        <div class="submit-job">
+            <button type="submit">Apply Now</button>
+        </div>
+    </form>
+</body>
+</html>
